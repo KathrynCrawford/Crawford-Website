@@ -53,8 +53,14 @@ hr {
     letter-spacing: 3px;
 }
 
+.plays-nav {
+	font-weight: 400;
+	letter-spacing: 3px;
+}
+
 .img-full {
     min-width: 100%;
+	margin-bottom: 20px;
 }
 
 .brand-before,
@@ -86,7 +92,7 @@ hr {
 
 .intro-text {
     text-transform: uppercase;
-    font-size: 1.25em;
+    font-size: 2m;
     font-weight: 400;
     letter-spacing: 1px;
 }
@@ -110,6 +116,10 @@ footer {
 footer p {
     margin: 0;
     padding: 50px 0;
+}
+
+.para-text {
+	padding:15px;
 }
 
 @media screen and (min-width:768px) {
@@ -168,6 +178,7 @@ footer p {
 
     .nav>li>a {
         padding: 35px;
+		color: #777;	
     }
 
     .navbar-nav>li>a {
@@ -181,6 +192,24 @@ footer p {
         table-layout: fixed;
         font-size: 1.25em;
     }
+	
+    .navbar-centered .navbar-nav {
+        float: none;
+        text-align: center;
+    }
+    .navbar-centered .navbar-nav > li {
+        float: none;
+    }
+	
+    .navbar-centered .nav > li {
+        display: inline;
+    }
+    .navbar-centered .nav > li > a {
+        display: inline-block;
+    }
+	.plays-nav {
+		font-size: 1.25em;
+	}
 }
 
 @media screen and (min-width:1200px) {
