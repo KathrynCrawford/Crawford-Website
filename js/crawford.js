@@ -1,6 +1,7 @@
 <script language="JavaScript">
 
 $(document).ready(function() {
+	
     $(".jumper").on("click", function(e) {
 
         e.preventDefault();
@@ -10,6 +11,10 @@ $(document).ready(function() {
         }, 600);
 
     });
+
 });
+
+	
+
 
 </script>

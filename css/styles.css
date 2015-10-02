@@ -4,6 +4,11 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+html {
+	font-size: 16px;
+	
+}
+ 
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     background: url('../img/bg.jpg') no-repeat center center fixed;
@@ -61,6 +66,10 @@ hr {
 .img-full {
     min-width: 100%;
 	margin-bottom: 20px;
+}
+
+.playbill-img {
+	width:25%;
 }
 
 .brand-before,
@@ -121,6 +130,12 @@ footer p {
 .para-text {
 	padding:15px;
 }
+
+.vcenter {
+    position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
 
 @media screen and (min-width:768px) {
     .brand {
@@ -209,6 +224,9 @@ footer p {
     }
 	.plays-nav {
 		font-size: 1.25em;
+	}
+	.playbill-img {
+	width: 50%;
 	}
 }
 
