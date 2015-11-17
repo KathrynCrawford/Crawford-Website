@@ -1,20 +1,9 @@
-<script language="JavaScript">
+var plays = document.getElementsByClassName('plays')
+var playsLength = plays.getLength();
 
-$(document).ready(function() {
-	
-    $(".jumper").on("click", function(e) {
+// for( i = 0; i < playsLength; i++ ) {
+// 	var tl = new TimelineMax({paused: false});
+// 	tl.to(plays[i] , 0.3, {autoAlpha: 1, display:'block'});
+// };
 
-        e.preventDefault();
-
-        $("body, html").animate({ 
-            scrollTop: $( $(this).attr('href') ).offset().top 
-        }, 600);
-
-    });
-
-});
-
-	
-
-
-</script>
+TimelineMax.to("#artesia", 0.6, {autoAlpha: 1, display: 'block'});
