@@ -41,7 +41,7 @@ audio:not([controls]) {
 }
 [hidden],
 template {
-  display: none;
+  opacity: 0;
 }
 a {
   background-color: transparent;
@@ -6366,7 +6366,7 @@ button.close {
   border: 0;
 }
 .hidden {
-  display: none !important;
+  opacity: 0;
 }
 .affix {
   position: fixed;

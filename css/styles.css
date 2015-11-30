@@ -63,13 +63,26 @@ hr {
 	letter-spacing: 3px;
 }
 
+#wrapper {
+		position: relative;
+    margin-bottom: 20px;
+}
+
+.plays {
+	visibility: hidden;
+	position: absolute;
+	padding: 10px;
+  background: #fff;
+  background: rgba(255,255,255,0.9);
+}
+
 #artesia, #borrowed, #harvest, #night, #tangled, #fairy, #moments, #timeless, #gallery {
-	visbility: hidden;
+	position: absolute;
 }
 
 
 .img-full {
-    min-width: 100%;
+  min-width: 100%;
 	margin-bottom: 20px;
 }
 
@@ -98,6 +111,7 @@ hr {
 }
 
 .box {
+		position: relative;
     margin-bottom: 20px;
     padding: 30px 15px;
     background: #fff;
@@ -140,7 +154,7 @@ footer p {
     position: relative;
       top: 50%;
       transform: translateY(-50%);
-    }
+}
 
 @media screen and (min-width:768px) {
     .brand {
