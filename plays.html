@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="crawford.js"></script>
 <head>
 
     <meta charset="utf-8">
@@ -90,31 +89,31 @@
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collape-1">
 							<ul class="navbar-nav nav plays-nav">
 								<li>
-									<a class="jumper" href="plays.html#artesia">Artesia</a>
+									<a class="titles" href="plays.html#artesia">Artesia</a>
 								</li>
 								<li>
-									<a class="jumper" href="plays.html#borrowed">Borrowed Plumage</a>
+									<a class="titles" href="plays.html#borrowed">Borrowed Plumage</a>
 								</li>
 								<li>
-									<a class="jumper" href="plays.html#harvest">Harvest</a>
+									<a class="titles" href="plays.html#harvest">Harvest</a>
 								</li>
 								<li>
-									<a class="jumper" href="plays.html#night">Night Cries</a>
+									<a class="titles" href="plays.html#night">Night Cries</a>
 								</li>
 								<li>
-									<a class="jumper" href="plays.html#tangled">Tangled Garden</a>
+									<a class="titles" href="plays.html#tangled">Tangled Garden</a>
 								</li>
 								<li>
-									<a class="jumper" href="plays.html#fairy">Fairytale Theatre</a>
+									<a class="titles" href="plays.html#fairy">Fairytale Theatre</a>
 								</li>
 								<li>
-									<a class="jumper" href="plays.html#moments">Moments</a>
+									<a class="titles" href="plays.html#moments">Moments</a>
 								</li>
 								<li>
-									<a class="jumper" href="plays.html#timeless">Timeless</a>
+									<a class="titles" href="plays.html#timeless">Timeless</a>
 								</li>
 								<li>
-									<a class="jumper" href="plays.html#gallery">Gallery</a>
+									<a class="titles" href="plays.html#gallery">Gallery</a>
 								</li>
 							</ul>
 						</div>
@@ -126,8 +125,8 @@
 
 	<!--Plays container-->
 	<div class="container">
-		<div class="box">
-      <div class="row">
+		<div id="wrapper">
+      <!--<div class="row">
   			<div class="col-lg-12">
   				<hr>
   				<h2 class="intro-text text-center">
@@ -135,10 +134,13 @@
   				</h2>
   				<hr>
   			</div>
-      </div>
+      </div>-->
 		<!--Artestia-->
-    <div class="hidden" id="artesia">
-			<div class="row text-center">
+    <div class="hidden plays">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2>Artesia</h2><br>
+				</div>
 				<div class="col-xs-12 col-md-4">
 					<img class="img-full" src="img/artesia1.jpg" alt="">
 				</div>
@@ -168,11 +170,11 @@
 			</div>
     </div>
 
-			<hr>
 		<!--Borrowed Plumage-->
-			<div class="row">
+      <div class="hidden plays">
+			 <div class="row">
 				<div class="col-lg-12 text-center">
-					<h2 id="borrowed">Borrowed Plumage</h2>
+					<h2>Borrowed Plumage</h2>
 				</div>
 			</div>
 			<div class="row">
@@ -197,10 +199,10 @@
 					<p><strong>Players Press - </strong>"Doctor Crawford has spun together a convoluted collection of emotions and characters. A powerful dramatic entertainment."</p>
 				</div>
 			</div>
-
+    </div>
 		<hr>
 
-		<!--Harvest-->
+		<!--Harvest
 			<div class="row">
 				<div class="col-lg-12 text-center">
 					<h2 id="harvest">Harvest</h2>
@@ -311,7 +313,7 @@
 
 		<hr>
 
-		<!--Night Cries-->
+		<!--Night Cries
 			<div class="row">
 				<div class="col-lg-12 text-center">
 					<h2 id="night">Night Cries
@@ -344,7 +346,7 @@
 
 		<hr>
 
-		<!--Tangled Garden-->
+		<!--Tangled Garden
 			<div class="row">
 				<div class="col-lg-12 text-center">
 					<h2 id="tangled">Tangled Garden
@@ -377,7 +379,7 @@
 	</div>
 
 
-  <!-- Fairytale theatre -->
+  <!-- Fairytale theatre
 	<div class="container">
 		<div class="box">
 			<div class="row">
@@ -393,7 +395,7 @@
 					<h2><small>These scripts were created to be produced in ten to fifteen minutes using either of two methods: Full Scale Production or Fairy Tale Theatre Technique: an exciting twenty year old time-tested technique: one that focuses on the audience’s imagination, allows freedom to the actor, and is easy on the budget. For further instruction on the two types of performances, download the <a href="url">Fairytale Method</a> in PDF format.
 				</div>
 			</div>
-			<!-- Volume 1 -->
+			<!-- Volume 1
 			<div class="row">
 				<div class="col-md-12 text-center">
 					<h3>Volume 1 - Traditional Tales</h3>
@@ -431,7 +433,7 @@
 					<img class="img-full" src="img/scared.jpg" alt="">
 				</div>
 			</div>
-			<!-- Volume 2 -->
+			<!-- Volume 2
 			<div class="row">
 				<div class="col-md-12 text-center">
 					<h3>Volume 2 - Something Borrowed, Something New</h3>
@@ -470,7 +472,7 @@
 					<img class="img-full" src="img/pain.jpg" alt="">
 				</div>
 			</div>
-			<!-- Volume 3 -->
+			<!-- Volume 3
 			<div class="row">
 				<div class="col-md-12 text-center">
 					<h3>Volume 3 - Tales Rediscovered</h3>
@@ -516,7 +518,7 @@
   </div>
 
 
-	<!--Scenebooks container-->
+	<!--Scenebooks container
   <div class="container">
     <div class="box">
       <div class="row">
@@ -529,7 +531,7 @@
   			</div>
       </div>
 
-		<!-- Moments -->
+		<!-- Moments
 			<div class="row">
 				<div class="col-lg-12 text-center">
 					<h2 id="moments">Moments
@@ -560,7 +562,7 @@
 
       <hr>
 
-      <!-- Timeless -->
+      <!-- Timeless
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 id="timeless">Timeless
@@ -576,7 +578,7 @@
 
         <hr>
 
-        <!-- Gallery -->
+        <!-- Gallery
           <div class="row">
             <div class="col-lg-12 text-center">
               <h2 id="gallery">Gallery
@@ -588,7 +590,7 @@
               <p>27 engrossing audition monologues for male or female performers. Fresh and original choices to revitalize the casting experience for actors, directors and producers alike, jaded by the same repeated selections at call after call.</p>
               <p>Every scene is provided with a brief and memorable introduction, setting the piece in context, and tailoring the work to the individual and gender of the performer. They rely on no props or frappings but can be readily presented in any performing environment.</p>
             </div>
-          </div>
+          </div>-->
 		</div>
 	</div>
 
@@ -608,9 +610,9 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-      <!--Greensock-->
-      <!--CDN link for the latest TweenMax-->
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <!--Greensock-->
+    <!--CDN link for the latest TweenMax-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 
     <!--website js-->
     <script src="js/crawford.js"></script>
