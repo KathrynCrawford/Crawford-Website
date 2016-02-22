@@ -1,33 +1,58 @@
-var plays = document.getElementsByClassName('plays'),
-    playsLength = plays.length,
-    titles = document.getElementsByClassName('titles'),
-    titlesLength = titles.length,
-    timelines = [];
+var titles = $(".titles"),
+plays = $(".plays"),
+distance = $('.navbar-default').offset().top,
+$window = $(window),
+//create animation for each element
+animations = plays.map(createAnimation);
 
-//Fill up tl array with timelines for each clippath
-for (var i = 0; i < playsLength; i ++) {
-  createTimelines(i);
-  assignListeners(i);
+$window.scroll(function() {
+    if ( $window.scrollTop() >= distance ) {
+        $('.navbar-default').css({
+        	'position':'fixed',
+          'top':'0',
+          'width':'100%',
+          'left':'0',
+          'right':'0',
+          'z-index': '10'
+        })
+    } else {
+    	$('.navbar-default').css({
+        	'position':'static'
+        })
+    }
+});
+
+titles.click(playAnimation);
+
+function playAnimation(event) {
+
+  // You links are causing errors on CodePen
+  event.preventDefault();
+
+  var selected = event.target.dataset.play;
+
+  //cycle through list of animations, toggling reversed state
+  animations.each(function(i, animate) {
+    animate(selected);
+  });
 }
 
-function createTimelines(i) {
-  var timeline = new TimelineMax({ paused: true });
-  //timeline.staggerTo(plays, 0.6, {autoAlpha: 0, ease: Expo.easeInOut}, 0.1)
-  timeline.set(plays, {clearProps: "all"})
-          .to(plays[i], 0.6, {
-          autoAlpha: 1,
-          ease: Expo.easeInOut});
-  timelines[i] = timeline;
-}
+function createAnimation(i, element) {
 
-function assignListeners(i) {
-    titles[i].addEventListener('click', function(e) { expand(e, i);}, false);
-}
+  var tween = TweenLite.to(element, 1, { autoAlpha: 1 }).reverse();
 
-function expand(e, i) {
-  timelines[i].play();
-}
+  var play = element.dataset.play;
 
-for (var x = 0; x < playsLength; x++ ){
-  console.log(createTimelines(i));
+  //return a function to toggle reversed state
+  return function(selected) {
+
+    //var reversed = element !== target ? true : !tween.reversed();
+
+    // DOING IT THIS WAY WILL TOGGLE THE SELECTED ONE IF CLICKED AGAIN
+    //var reversed = selected !== play ? true : !tween.reversed();
+
+    // DOING IT THIS WAY WILL KEEP THE SELECTED ONE OPEN REGARDLESS OF IT WAS CLICKED AGAIN
+    var reversed = (selected !== play);
+    tween.reversed(reversed);
+  }
 }
