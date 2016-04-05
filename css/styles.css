@@ -107,6 +107,10 @@ hr {
   background: rgba(255,255,255,0.9);
 }
 
+.unpub-img {
+	margin: 10px auto;
+}
+
 .img-full {
   min-width: 100%;
 	margin: 8px auto;
